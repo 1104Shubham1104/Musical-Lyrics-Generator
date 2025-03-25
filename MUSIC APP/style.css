@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+:root {
+    --main-color: #28A745;
+    --secondary-color: #46C05E;
+    --background-dark: rgba(0, 0, 0, 0.85);
+    --text-color: rgba(255, 255, 255, 0.9);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    background: #f4f4f4;
+    color: #222;
+}
+
+header {
+    background: url('https://source.unsplash.com/1600x900/?music,concert') no-repeat center center/cover;
+    color: var(--text-color);
+    text-align: center;
+    padding: 5rem 1rem;
+    position: relative;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--background-dark);
+    opacity: 0.7;
+}
+
+header h1 {
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+form {
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: var(--main-color);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: var(--secondary-color);
+}
+
+.container {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.info-text {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+ul.songs {
+    list-style: none;
+    padding: 0;
+}
+
+ul.songs li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.btn {
+    background: var(--main-color);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--secondary-color);
+}
+
+.toast {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background: var(--secondary-color);
+    color: var(--text-color);
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: none;
+}
